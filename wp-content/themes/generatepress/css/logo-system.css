@@ -1,0 +1,200 @@
+/* GP Advanced Logo System - Main Styles */
+/* Add to your theme's custom CSS or create a separate file */
+
+:root {
+    --logo-primary-color: #1e73be;
+    --logo-secondary-color: #333333;
+    --logo-hover-color: #0f4c81;
+    --logo-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --logo-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --logo-shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Main Logo Container */
+.gp-advanced-logo {
+    display: flex;
+    align-items: center;
+    max-width: var(--logo-max-width, 200px);
+    height: var(--logo-max-height, 60px);
+    position: relative;
+}
+
+.gp-logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--logo-secondary-color);
+    transition: var(--logo-transition);
+    padding: 8px 0;
+    border-radius: 8px;
+}
+
+.gp-logo-link:hover,
+.gp-logo-link:focus {
+    color: var(--logo-primary-color);
+    transform: translateY(-1px);
+    box-shadow: var(--logo-shadow-hover);
+}
+
+/* Logo Picture Element */
+.gp-logo-picture {
+    display: block;
+    line-height: 0;
+}
+
+.gp-logo-image {
+    max-width: 100%;
+    max-height: var(--logo-max-height, 60px);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: var(--logo-transition);
+    filter: brightness(1);
+}
+
+.gp-logo-link:hover .gp-logo-image {
+    filter: brightness(1.05);
+    transform: scale(1.02);
+}
+
+/* Logo Text Section */
+.gp-logo-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    line-height: 1.2;
+}
+
+.gp-site-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--logo-secondary-color);
+    margin: 0;
+    transition: var(--logo-transition);
+}
+
+.gp-logo-link:hover .gp-site-title {
+    color: var(--logo-primary-color);
+}
+
+.gp-site-description {
+    font-size: 0.875rem;
+    color: #666;
+    margin: 2px 0 0 0;
+    font-weight: 400;
+}
+
+/* Responsive Logo System */
+@media (max-width: 768px) {
+    .gp-advanced-logo {
+        max-width: 150px;
+        height: 40px;
+    }
+
+    .gp-logo-image {
+        max-height: 40px;
+    }
+
+    .gp-logo-text {
+        margin-left: 8px;
+    }
+
+    .gp-site-title {
+        font-size: 1.1rem;
+    }
+
+    .gp-site-description {
+        font-size: 0.8rem;
+        display: none; /* Hide tagline on mobile by default */
+    }
+}
+
+@media (max-width: 480px) {
+    .gp-advanced-logo {
+        max-width: 120px;
+        height: 32px;
+    }
+
+    .gp-logo-image {
+        max-height: 32px;
+    }
+
+    .gp-logo-text {
+        display: none; /* Hide text completely on very small screens */
+    }
+}
+
+/* Header Context Variations */
+.header-logo-section .gp-advanced-logo {
+    margin-right: auto;
+}
+
+.footer-logo-section .gp-advanced-logo {
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.footer-logo-section .gp-logo-text {
+    text-align: center;
+}
+
+.footer-logo-section .gp-site-description {
+    color: #999;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --logo-secondary-color: #ffffff;
+        --logo-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+        --logo-shadow-hover: 0 4px 16px rgba(255, 255, 255, 0.15);
+    }
+
+    .gp-site-description {
+        color: #ccc;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .gp-logo-link {
+        border: 2px solid transparent;
+    }
+
+    .gp-logo-link:focus {
+        border-color: var(--logo-primary-color);
+        outline: 2px solid var(--logo-primary-color);
+        outline-offset: 2px;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    .gp-logo-link,
+    .gp-logo-image,
+    .gp-site-title {
+        transition: none;
+    }
+
+    .gp-logo-link:hover {
+        transform: none;
+    }
+
+    .gp-logo-link:hover .gp-logo-image {
+        transform: none;
+        filter: none;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .gp-advanced-logo {
+        max-width: 150px;
+        height: auto;
+    }
+
+    .gp-logo-link:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
