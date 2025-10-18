@@ -13,12 +13,12 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: FTP Deploy
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+    - name: SFTP Deploy
+      uses: laryve/sftp-action@v1
       with:
-        server: ${{ secrets.FTP_SERVER }}
+        host: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         port: ${{ secrets.FTP_PORT }}
-        local-dir: ./wp-content/themes/generatepress_child/
-        server-dir: /www/upulsanjeewagamage.com/public_html/wp-content/themes/generatepress_child/
+        localDir: ./wp-content/themes/generatepress_child/
+        remoteDir: /www/upulsanjeewagamage.com/public_html/wp-content/themes/generatepress_child/
