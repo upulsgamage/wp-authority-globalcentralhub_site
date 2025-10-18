@@ -14,11 +14,11 @@ jobs:
       uses: actions/checkout@v4
 
     - name: SFTP Deploy
-      uses: laryve/sftp-action@v1
+      uses: appleboy/sftp-action@master
       with:
         host: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         port: ${{ secrets.FTP_PORT }}
-        localDir: ./wp-content/themes/generatepress_child/
-        remoteDir: /www/upulsanjeewagamage.com/public_html/wp-content/themes/generatepress_child/
+        source: "wp-content/themes/generatepress_child/*"
+        target: "/www/upulsanjeewagamage.com/public_html/wp-content/themes/generatepress_child/"
