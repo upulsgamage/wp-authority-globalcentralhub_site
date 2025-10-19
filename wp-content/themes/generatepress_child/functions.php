@@ -43,3 +43,31 @@ function generatepress_child_add_favicon_meta_tags() {
 	<?php
 }
 add_action( 'wp_head', 'generatepress_child_add_favicon_meta_tags' );
+
+/**
+ * TEMP fix: Strip non-standard id="cta-top" from Button wrapper on the
+ * Waiting Room page to avoid front-end schema mismatches while the page
+ * content is being normalized in the editor.
+ *
+ * Safe to remove after the button is re-added without the extra id.
+ */
+function generatepress_child_strip_cta_top_id( $content ) {
+	if ( ! is_page() ) {
+		return $content;
+	}
+
+	// Target the Waiting Room page by slug or title.
+	if ( ! is_page( 'waiting-room' ) && ! is_page( 'Waiting Room' ) ) {
+		return $content;
+	}
+
+	// Remove id="cta-top" attribute when it appears on a core Button wrapper.
+	$content = preg_replace(
+		'/(<div\s[^>]*class=\"[^\"]*wp-block-button[^\"]*\"[^>]*?)\s+id=\"cta-top\"/i',
+		'$1',
+		$content
+	);
+
+	return $content;
+}
+add_filter( 'the_content', 'generatepress_child_strip_cta_top_id', 20 );
