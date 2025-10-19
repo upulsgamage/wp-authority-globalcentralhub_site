@@ -34,7 +34,7 @@
 	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 	<div class="wp-block-buttons">
 		<!-- wp:button {"backgroundColor":"contrast","textColor":"base","style":{"typography":{"fontStyle":"normal","fontWeight":"600"}},"className":"is-style-fill"} -->
-		<div class="wp-block-button is-style-fill" id="cta-top"><a class="wp-block-button__link has-base-color has-contrast-background-color has-text-color has-background has-normal-font-weight" href="#signup">Join the Waiting Room</a></div>
+		<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-base-color has-contrast-background-color has-text-color has-background has-normal-font-weight" href="#signup">Join the Waiting Room</a></div>
 		<!-- /wp:button -->
 	</div>
 	<!-- /wp:buttons -->
@@ -71,7 +71,7 @@
 
 	<!-- wp:group {"style":{"spacing":{"padding":{"top":"24px","bottom":"24px","right":"24px","left":"24px"}},"border":{"radius":"12px","width":"1px"}},"borderColor":"contrast-2","layout":{"type":"constrained","contentSize":"680px"}} -->
 	<div class="wp-block-group has-border-color has-contrast-2-border-color" style="border-width:1px;border-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
-		<!-- wp:heading {"textAlign":"center","level":3} -->
+		<!-- wp:heading {"textAlign":"center","level":3,"anchor":"signup"} -->
 		<h3 class="wp-block-heading has-text-align-center" id="signup">Join the Waiting Room</h3>
 		<!-- /wp:heading -->
 
