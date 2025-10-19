@@ -15,19 +15,30 @@
     <?php wp_head(); ?>
     <style>
         /* Minimal, non-invasive defaults for landing pages */
+        html {
+            /* Smooth scroll for in-page anchors like #signup */
+            scroll-behavior: smooth;
+        }
         body.landing-no-header-footer {
             margin: 0;
         }
         main.site-main {
+            /* Allow natural flow; avoid vertical centering to prevent
+               awkward layout/anchor offsets on long content */
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
         .landing-container {
             width: 100%;
             max-width: 960px;
             padding: 40px 20px;
+        }
+
+        /* Ensure anchor scroll positions account for WP admin bar */
+        #signup {
+            scroll-margin-top: 24px;
+        }
+        body.admin-bar #signup {
+            scroll-margin-top: 64px; /* space for the WP admin bar */
         }
     </style>
     
