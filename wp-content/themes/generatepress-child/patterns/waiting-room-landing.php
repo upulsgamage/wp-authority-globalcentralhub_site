@@ -9,7 +9,7 @@
  */
 ?>
 
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"64px","bottom":"64px","right":"24px","left":"24px"}}},"layout":{"type":"constrained","contentSize":"800px"}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"64px","bottom":"64px","right":"24px","left":"24px"}},"layout":{"type":"constrained","contentSize":"800px"}} -->
 <div class="wp-block-group" style="padding-top:64px;padding-right:24px;padding-bottom:64px;padding-left:24px">
 	<!-- wp:heading {"textAlign":"center","level":1,"fontSize":"x-large"} -->
 	<h1 class="wp-block-heading has-text-align-center has-x-large-font-size">Curated Sensory Rituals. Limited Founder’s Edition.</h1>

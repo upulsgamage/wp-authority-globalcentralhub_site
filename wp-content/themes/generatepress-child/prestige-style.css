@@ -1,0 +1,84 @@
+
+/*
+Theme Name:   GeneratePress Child (Prestige Edition)
+Theme URI:    https://generatepress.com
+Description:  Prestige-inspired child theme for the Global Central Hub authority site, featuring luxury branding and modern e-commerce styles.
+Author:       Upul Sanjeewa Gamage
+Author URI:   https://upulsanjeewagamage.com/
+Template:     generatepress
+Version:      2.0.0
+*/
+
+:root {
+    --prestige-bg: #f8fafc;
+    --prestige-bg-alt: #fff;
+    --prestige-accent: #1a202c;
+    --prestige-accent-light: #374151;
+    --prestige-gold: #c6a87d;
+    --prestige-btn-bg: #1a202c;
+    --prestige-btn-hover: #374151;
+    --prestige-radius: 8px;
+    --prestige-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    --prestige-font-headline: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+    --prestige-font-body: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background: var(--prestige-bg);
+    color: var(--prestige-accent);
+    font-family: var(--prestige-font-body);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--prestige-font-headline);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--prestige-accent);
+}
+
+section {
+    border-radius: var(--prestige-radius);
+    box-shadow: var(--prestige-shadow);
+    margin-bottom: 48px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.cta-btn, a.cta-btn, .freelance-cta a, .sensory-ritual-teaser a {
+    background: var(--prestige-btn-bg);
+    color: #fff !important;
+    padding: 16px 40px;
+    border-radius: var(--prestige-radius);
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: var(--prestige-shadow);
+    transition: background 0.2s;
+    display: inline-block;
+}
+
+.cta-btn:hover, a.cta-btn:hover, .freelance-cta a:hover, .sensory-ritual-teaser a:hover {
+    background: var(--prestige-btn-hover);
+}
+
+img {
+    border-radius: 12px;
+    box-shadow: var(--prestige-shadow);
+}
+
+ul {
+    padding-left: 1.2em;
+}
+
+@media (max-width: 700px) {
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.5rem; }
+    .container { padding: 0 12px; }
+    section { margin-bottom: 32px; }
+}
