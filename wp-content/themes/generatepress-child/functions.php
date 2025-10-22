@@ -98,8 +98,8 @@ add_action('generate_after_header', function() {
                         <a href="/alba-prive" style="color:#fff;background:#1a202c;padding:14px 32px;border-radius:6px;font-weight:600;text-decoration:none;font-size:1.1rem;display:inline-block;">Explore Alba Privé</a>
                     </div>
                     <div style="flex:1;min-width:280px;text-align:center;">
-                        <img src="/wp-content/uploads/sensory-ritual-box.jpg" alt="Alba Privé Sensory Ritual Experience Box" style="max-width:340px;width:100%;border-radius:12px;box-shadow:0 2px 16px rgba(0,0,0,0.08);margin-bottom:12px;" />
-                        <div style="font-size:1rem;color:#6b7280;">Curated by Alba Privé</div>
+                        <img src="/wp-content/themes/generatepress-child/assets/images/Logo SVG Files/For Light Backgrounds/ap-lb-primary-logo-tagline-full-signature-lockup.svg" alt="Alba Privé Primary Logo with Tagline" style="max-width:220px;width:100%;margin-bottom:18px;box-shadow:0 4px 24px rgba(30,30,30,0.07);border-radius:8px;background:#fff;padding:18px 0;" />
+                        <div style="font-size:1rem;color:#6b7280;">Sri Lankan Heritage. Melbourne Artistry.<br><em>Product image coming soon</em></div>
                     </div>
                 </div>
             </section>
