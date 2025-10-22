@@ -41,6 +41,10 @@ add_action('wp_head', function() {
         </style>';
     }
 });
+    // Remove 'Built with GeneratePress' from footer credits
+    add_filter('generate_footer_credits', function() {
+        return '&copy; 2025 Upul Sanjeewa Gamage. All rights reserved. | Global AI E-commerce Architect & Alba Privé Sensory Rituals';
+    });
     // Add favicon meta tags to the head
     add_action('wp_head', function() {
         $theme_dir = get_stylesheet_directory_uri();
