@@ -22,3 +22,25 @@ ehthumbs.db
 
 # SFTP config
 .vscode/sftp.json
+
+# WordPress core (if not versioned)
+wp-admin/
+wp-includes/
+
+# Node.js dependencies
+node_modules/
+
+# Composer dependencies
+vendor/
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+*.old
