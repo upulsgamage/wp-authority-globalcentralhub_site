@@ -1,9 +1,9 @@
-name: Deploy to Production
+name: Deploy to Staging
 
 on:
   push:
     branches:
-      - main
+      - staging
 
 jobs:
   deploy:
@@ -15,7 +15,7 @@ jobs:
       - name: Deploy via SFTP
         run: |
           apt-get update && apt-get install -y lftp
-          lftp -c "open -u $SFTP_USER,$SFTP_PASS sftp://ssh.upulsanjeewagamage.com:18765; mirror -R ./wp-content /home/u2949-pmnjdp9drwa7/www/upulsanjeewagamage.com/public_html/wp-content"
+          lftp -c "open -u $SFTP_USER,$SFTP_PASS sftp://ssh.upulsanjeewagamage.com:18765; mirror -R ./wp-content /home/u2949-pmnjdp9drwa7/www/staging.upulsanjeewagamage.com/public_html/wp-content"
         env:
           SFTP_USER: u2949-pmnjdp9drwa7
           SFTP_PASS: ${{ secrets.SFTP_PASS }}
