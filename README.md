@@ -1,3 +1,3 @@
 # wp-GlobalCentralHub-usg
-This is my Global Central HUB of http://upulsanjeewagamage.com site. 
+This is MY Global Central HUB of http://upulsanjeewagamage.com that means the authority site. 
 # Test workflow trigger
