@@ -165,8 +165,8 @@ add_action('generate_after_header', function() {
             </section>
                 <section class="freelance-cta" style="background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);padding:80px 0 64px 0;text-align:left;position: relative;">
                     <div class="container" style="max-width:1000px;margin:auto;color:#fff;">
-                        <h2 style="font-size:2.4rem;font-weight:600;color:#fff;margin-bottom:20px;border-bottom: 3px solid #c6a87d;padding-bottom: 12px;">Work With Upul — Freelance & Contract Opportunities</h2>
-                        <p style="font-size:1.2rem;color:#e2e8f0;max-width:750px;margin-bottom:32px;line-height:1.7;">Partner with a global expert in AI-powered e-commerce, digital transformation, and sensory brand innovation. Upul Sanjeewa Gamage offers freelance and contract services for select brands, agencies, and founders seeking breakthrough results in strategy, technology, and creative direction.</p>
+                        <h2 style="font-size:2.4rem;font-weight:600;color:#fff;margin-bottom:20px;border-bottom: 3px solid #c6a87d;padding-bottom: 12px;">Work With Upul — Strategic Consulting & Contract Services</h2>
+                        <p style="font-size:1.2rem;color:#e2e8f0;max-width:750px;margin-bottom:32px;line-height:1.7;">Partner with a global expert in AI-powered e-commerce, digital transformation, and sensory brand innovation. Upul Sanjeewa Gamage provides strategic consulting and contract services for select brands, agencies, and founders seeking breakthrough results in strategy, technology, and creative direction.</p>
                         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-bottom:32px;">
                             <div style="background: rgba(255,255,255,0.05);padding:24px;border-radius:12px;border:1px solid rgba(198,168,125,0.2);">
                                 <h3 style="font-size:1.1rem;color:#c6a87d;font-weight:600;margin-bottom:12px;">AI E-commerce Architecture</h3>
