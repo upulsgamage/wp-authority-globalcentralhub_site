@@ -34,6 +34,6 @@ $config = array (
   ),
   'output_dir' => '/home/customer/www/upulsanjeewagamage.com/public_html/wp-content/cache/sgo-cache/',
   'logged_in_cache' => 0,
-  'cache_secret_key' => '411eef81ee3aeef158dabd3da56bd2ed',
+  'cache_secret_key' => '768a4bd8813295442abf6db82df8137e',
   'logged_in_cookie' => 'wordpress_logged_in_453159fc0cca685abf425f5d3b5cdcfa',
 );
