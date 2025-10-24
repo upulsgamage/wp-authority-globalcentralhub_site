@@ -18,7 +18,6 @@ jobs:
           username: u2949-pmnjdp9drwa7
           server: ssh.upulsanjeewagamage.com
           port: 18765
-          ssh_private_key: ${{ secrets.SFTP_PRIVATE_KEY }}
-          ssh_private_key_passphrase: ${{ secrets.SFTP_PASSPHRASE }}
+          password: ${{ secrets.SFTP_PASS }}
           local_path: ./wp-content/
           remote_path: /home/u2949-pmnjdp9drwa7/www/staging.upulsanjeewagamage.com/public_html/wp-content/
