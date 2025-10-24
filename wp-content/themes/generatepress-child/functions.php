@@ -34,9 +34,16 @@ add_action('wp_head', function() {
                 font-weight: 600;
                 box-shadow: 0 2px 8px rgba(0,0,0,0.08);
                 transition: background 0.2s;
+                margin-right: 16px;
+            }
+            .custom-home-hero .cta-btn.secondary {
+                background: #6b7280;
             }
             .custom-home-hero .cta-btn:hover {
                 background: #374151;
+            }
+            .custom-home-hero .cta-btn.secondary:hover {
+                background: #4b5563;
             }
         </style>';
     }
@@ -80,7 +87,10 @@ add_action('generate_after_header', function() {
             <div class="container">
                 <h1>Upul Sanjeewa Gamage<br><span style="font-size:2rem;font-weight:400;color:#374151;">Global AI E-commerce Architect & Visionary Technologist</span></h1>
                 <p>Welcome to Alba Privé — a sensory ritual brand and global authority hub for AI-powered commerce, innovation, and personal transformation. Discover the future of e-commerce, experience the art of sensory living, and unlock new possibilities for your brand, business, and life.</p>
-                <a href="#contact" class="cta-btn">Work With Upul</a>
+                <div class="cta-buttons">
+                    <a href="/waiting-room" class="cta-btn primary">Join Alba Privé Waiting Room</a>
+                    <a href="#contact" class="cta-btn secondary">Work With Upul</a>
+                </div>
             </div>
         </section>
         <section class="about-snapshot" style="background:#fff;padding:48px 0 32px 0;text-align:left;">
