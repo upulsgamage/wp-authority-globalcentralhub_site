@@ -76,6 +76,56 @@ ul {
     padding-left: 1.2em;
 }
 
+/* Blog Sage Accents - Gold highlights for key insights */
+.entry-content blockquote {
+    border-left: 4px solid var(--prestige-gold);
+    background: rgba(198, 168, 125, 0.05);
+    padding: 20px 24px;
+    margin: 24px 0;
+    font-style: italic;
+    color: var(--prestige-accent-light);
+}
+
+.entry-content blockquote p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.entry-content strong {
+    color: var(--prestige-gold);
+    font-weight: 700;
+}
+
+.entry-content em {
+    color: var(--prestige-accent);
+    font-style: italic;
+    border-bottom: 1px solid var(--prestige-gold);
+    padding-bottom: 2px;
+}
+
+.entry-content .wp-block-quote {
+    border-left: 4px solid var(--prestige-gold);
+    background: rgba(198, 168, 125, 0.05);
+    padding: 20px 24px;
+    margin: 24px 0;
+}
+
+.entry-content .wp-block-quote cite {
+    color: var(--prestige-gold);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.entry-content h2, .entry-content h3, .entry-content h4 {
+    border-bottom: 2px solid var(--prestige-gold);
+    padding-bottom: 8px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
 @media (max-width: 700px) {
     h1 { font-size: 2.2rem; }
     h2 { font-size: 1.5rem; }
