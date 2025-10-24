@@ -44,3 +44,9 @@ vendor/
 *.swp
 *.bak
 *.old
+
+# Local documentation files
+alba_prive_brand_guide.md
+alba_prive_gtm_action_plan.md
+project_blueprint.md
+wp-content/themes/generatepress-child/assets/upul_resume.txt
