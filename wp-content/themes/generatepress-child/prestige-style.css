@@ -36,6 +36,15 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     letter-spacing: 0.02em;
     color: var(--prestige-accent);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+h1 {
+    background: linear-gradient(135deg, var(--prestige-accent) 0%, var(--prestige-accent-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: none;
 }
 
 section {
@@ -51,20 +60,39 @@ section {
 }
 
 .cta-btn, a.cta-btn, .freelance-cta a, .sensory-ritual-teaser a {
-    background: var(--prestige-btn-bg);
+    background: linear-gradient(135deg, var(--prestige-btn-bg) 0%, var(--prestige-accent-light) 100%);
     color: #fff !important;
-    padding: 16px 40px;
+    padding: 18px 44px;
     border-radius: var(--prestige-radius);
     font-size: 1.25rem;
     font-weight: 600;
     text-decoration: none;
     box-shadow: var(--prestige-shadow);
-    transition: background 0.2s;
+    transition: all 0.3s ease;
     display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-btn:before, a.cta-btn:before, .freelance-cta a:before, .sensory-ritual-teaser a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.cta-btn:hover:before, a.cta-btn:hover:before, .freelance-cta a:hover:before, .sensory-ritual-teaser a:hover:before {
+    left: 100%;
 }
 
 .cta-btn:hover, a.cta-btn:hover, .freelance-cta a:hover, .sensory-ritual-teaser a:hover {
-    background: var(--prestige-btn-hover);
+    background: linear-gradient(135deg, var(--prestige-accent-light) 0%, var(--prestige-btn-bg) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
 
 img {
@@ -76,25 +104,75 @@ ul {
     padding-left: 1.2em;
 }
 
-/* Blog Sage Accents - Gold highlights for key insights */
+.entry-content ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.entry-content ul li strong {
+    color: var(--prestige-accent);
+}
+
+.entry-content ul li strong:first-child {
+    color: var(--prestige-gold);
+}
+
+/* Mission emphasis animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.entry-content h2, .entry-content h3, .entry-content h4 {
+    border-bottom: 2px solid var(--prestige-gold);
+    padding-bottom: 8px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.entry-content blockquote {
+    animation: fadeInUp 0.8s ease-out;
+}
 .entry-content blockquote {
     border-left: 4px solid var(--prestige-gold);
-    background: rgba(198, 168, 125, 0.05);
-    padding: 20px 24px;
-    margin: 24px 0;
+    background: linear-gradient(135deg, rgba(198, 168, 125, 0.08) 0%, rgba(198, 168, 125, 0.03) 100%);
+    padding: 24px 28px;
+    margin: 32px 0;
     font-style: italic;
     color: var(--prestige-accent-light);
+    position: relative;
+    box-shadow: 0 4px 12px rgba(198, 168, 125, 0.15);
+}
+
+.entry-content blockquote:before {
+    content: '"';
+    font-size: 4rem;
+    color: var(--prestige-gold);
+    position: absolute;
+    top: -10px;
+    left: 16px;
+    font-family: 'Georgia', serif;
+    opacity: 0.3;
 }
 
 .entry-content blockquote p {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     line-height: 1.6;
+    font-weight: 500;
 }
 
 .entry-content strong {
     color: var(--prestige-gold);
     font-weight: 700;
+    text-shadow: 0 1px 2px rgba(198, 168, 125, 0.3);
 }
 
 .entry-content em {
@@ -102,6 +180,41 @@ ul {
     font-style: italic;
     border-bottom: 1px solid var(--prestige-gold);
     padding-bottom: 2px;
+    transition: all 0.2s ease;
+}
+
+.entry-content em:hover {
+    color: var(--prestige-gold);
+    border-bottom-color: var(--prestige-accent);
+}
+
+/* Architect terminology highlighting */
+.architect-term, .ai-term, .ecommerce-term {
+    background: linear-gradient(120deg, rgba(198, 168, 125, 0.1) 0%, rgba(198, 168, 125, 0.05) 100%);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: var(--prestige-accent);
+    transition: all 0.2s ease;
+}
+
+.architect-term:hover, .ai-term:hover, .ecommerce-term:hover {
+    background: linear-gradient(120deg, rgba(198, 168, 125, 0.2) 0%, rgba(198, 168, 125, 0.1) 100%);
+    color: var(--prestige-gold);
+}
+
+/* Author signature styling */
+.author-signature {
+    border-top: 1px solid var(--prestige-gold);
+    padding-top: 16px;
+    margin-top: 32px;
+    font-weight: 600;
+    color: var(--prestige-accent-light);
+}
+
+.author-signature strong {
+    color: var(--prestige-accent);
+    font-size: 1.1rem;
 }
 
 .entry-content .wp-block-quote {
