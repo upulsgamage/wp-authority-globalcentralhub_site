@@ -1,4 +1,4 @@
 # wp-GlobalCentralHub-usg
 This is MY Global Central HUB of http://upulsanjeewagamage.com site. 
-This is testing line
+Hi how are you!
 # Test workflow trigger
