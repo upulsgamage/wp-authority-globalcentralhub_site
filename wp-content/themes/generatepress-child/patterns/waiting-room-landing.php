@@ -80,9 +80,9 @@
 		<!-- /wp:paragraph -->
 
 		<!-- wp:html -->
-		<!-- Replace this with your form embed (Klaviyo/ConvertKit/MailerLite). -->
 		<div style="max-width:520px;margin:16px auto 0;">
-			<!-- Form embed goes here -->
+			<!-- PASTE YOUR KLAVIYO FORM EMBED CODE HERE -->
+			<!-- Go to Klaviyo → Signup Forms → [Your Form] → Embed & Integrations → Copy the embed code -->
 		</div>
 		<!-- /wp:html -->
 
