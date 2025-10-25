@@ -116,6 +116,11 @@ add_action('wp_head', function() {
         wp_enqueue_style('generatepress-child-google-fonts', 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap', [], null);
     });
 
+    // Enqueue Klaviyo script for forms
+    add_action('wp_enqueue_scripts', function() {
+        wp_enqueue_script('klaviyo-script', 'https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=YOUR_PUBLIC_API_KEY', [], null, true);
+    });
+
     // TEMP fix: Strip non-standard id="cta-top" from Button wrapper on the Waiting Room page
     add_filter('the_content', function($content) {
         if (!is_page()) return $content;
