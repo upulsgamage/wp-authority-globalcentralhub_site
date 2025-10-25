@@ -118,7 +118,7 @@ add_action('wp_head', function() {
 
     // Enqueue Klaviyo script for forms
     add_action('wp_enqueue_scripts', function() {
-        wp_enqueue_script('klaviyo-script', 'https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=YOUR_PUBLIC_API_KEY', [], null, true);
+        wp_enqueue_script('klaviyo-script', 'https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=SRwuCu', [], null, true);
     });
 
     // TEMP fix: Strip non-standard id="cta-top" from Button wrapper on the Waiting Room page
@@ -161,9 +161,9 @@ add_action('generate_after_header', function() {
                     </div>
                     <div style="flex:1;min-width:320px;text-align:center;">
                         <div style="background: #fff;border-radius: 16px;padding: 32px;box-shadow: 0 8px 32px rgba(0,0,0,0.1);border: 1px solid #e5e7eb;">
-                            <img src="/wp-content/themes/generatepress-child/assets/images/Logo SVG Files/For Light Backgrounds/ap_LightB_The Primary Logo with Tagline (The Full Signature Lockup).svg" alt="Alba Privé Primary Logo with Tagline" style="max-width:240px;width:100%;margin-bottom:20px;" />
+                            <img src="/wp-content/themes/generatepress-child/assets/images/Logo SVG Files/For Light Backgrounds/ap-primary-logotype-the-signature.svg" alt="Alba Privé Primary Logo with Tagline" style="max-width:240px;width:100%;margin-bottom:20px;" />
                             <div style="font-size:1.1rem;color:#6b7280;font-weight:500;margin-bottom: 12px;">Sri Lankan Heritage. Melbourne Artistry.</div>
-                            <div style="font-size:0.95rem;color:#9ca3af;font-style:italic;">✨ Sensory Ritual Experience Box<br><em>Pre-launch edition • Limited availability</em></div>
+                            <div style="font-size:0.95rem;color:#9ca3af;font-style:italic;">Sensory Ritual Experience Box<br><em>Pre-launch edition • Limited availability</em></div>
                         </div>
                     </div>
                 </div>
