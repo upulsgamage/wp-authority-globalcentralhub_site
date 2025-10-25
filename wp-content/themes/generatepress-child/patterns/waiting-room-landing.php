@@ -81,8 +81,7 @@
 
 		<!-- wp:html -->
 		<div style="max-width:520px;margin:16px auto 0;">
-			<!-- PASTE YOUR KLAVIYO FORM EMBED CODE HERE -->
-			<!-- Go to Klaviyo → Signup Forms → [Your Form] → Embed & Integrations → Copy the embed code -->
+			<div class="klaviyo-form-UHLS6V"></div>
 		</div>
 		<!-- /wp:html -->
 
