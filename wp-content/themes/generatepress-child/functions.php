@@ -141,7 +141,7 @@ add_action('generate_after_header', function() {
                 <p>Welcome to Alba Privé — a sensory ritual brand and global authority hub for AI-powered commerce, innovation, and personal transformation. Discover the future of e-commerce, experience the art of sensory living, and unlock new possibilities for your brand, business, and life.</p>
                 <div class="cta-buttons">
                     <a href="/waiting-room" class="cta-btn primary">Join Alba Privé Waiting Room</a>
-                    <a href="#contact" class="cta-btn secondary">Work With Upul</a>
+                    <a href="/contact" class="cta-btn secondary">Work With Upul</a>
                 </div>
             </div>
         </section>
