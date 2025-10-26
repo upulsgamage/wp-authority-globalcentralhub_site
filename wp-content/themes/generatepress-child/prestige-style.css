@@ -6,7 +6,7 @@ Description:  Prestige-inspired child theme for the Global Central Hub authority
 Author:       Upul Sanjeewa Gamage
 Author URI:   https://upulsanjeewagamage.com/
 Template:     generatepress
-Version:      2.0.0
+Version:      2.0.1
 */
 
 :root {
@@ -311,14 +311,16 @@ ul {
     max-width: 100% !important;
 }
 
-.contact-service-cards {
+.contact-service-cards,
+.wp-block-group.contact-service-cards {
     display: grid !important;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
     gap: 24px !important;
     margin: 40px 0 !important;
 }
 
-.contact-service-card {
+.contact-service-card,
+.wp-block-group.contact-service-card {
     background: linear-gradient(135deg, #f8fafc 0%, #f0f4f8 100%) !important;
     border: 1px solid #e5e7eb !important;
     border-radius: 16px !important;
@@ -328,20 +330,25 @@ ul {
     transition: all 0.3s ease !important;
 }
 
-.contact-service-card:hover {
+.contact-service-card:hover,
+.wp-block-group.contact-service-card:hover {
     transform: translateY(-4px) !important;
     box-shadow: 0 8px 32px rgba(0,0,0,0.1) !important;
     border-color: var(--prestige-gold) !important;
 }
 
-.contact-service-card h4 {
+.contact-service-card h4,
+.wp-block-group.contact-service-card h4,
+.contact-service-card .wp-block-heading,
+.wp-block-group.contact-service-card .wp-block-heading {
     color: var(--prestige-gold) !important;
     font-size: 1.2rem !important;
     font-weight: 600 !important;
     margin-bottom: 12px !important;
 }
 
-.contact-service-card p {
+.contact-service-card p,
+.wp-block-group.contact-service-card p {
     color: #374151 !important;
     font-size: 0.95rem !important;
     line-height: 1.6 !important;
