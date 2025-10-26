@@ -245,3 +245,63 @@ ul {
     .container { padding: 0 12px; }
     section { margin-bottom: 32px; }
 }
+
+/* Contact Page Responsive Fixes */
+@media (max-width: 768px) {
+    /* Make columns stack vertically on mobile */
+    .wp-container-core-columns-is-layout-23f56164,
+    .wp-container-core-columns-is-layout-febd5ed0 {
+        flex-wrap: wrap !important;
+    }
+    
+    /* Adjust column widths for mobile */
+    .wp-container-core-columns-is-layout-23f56164 > .wp-block-column,
+    .wp-container-core-columns-is-layout-febd5ed0 > .wp-block-column {
+        flex-basis: 100% !important;
+        margin-bottom: 32px;
+    }
+    
+    /* Reduce padding on bordered sections */
+    .wp-block-group.has-border-color {
+        padding: 32px 20px !important;
+    }
+    
+    /* Adjust heading sizes for mobile */
+    .wp-block-heading {
+        font-size: 1.8rem !important;
+        margin-bottom: 20px !important;
+    }
+    
+    /* Reduce spacing */
+    .wp-block-group__inner-container {
+        padding: 32px !important;
+    }
+    
+    /* Service areas list spacing */
+    .wp-block-list li {
+        margin-bottom: 12px !important;
+        font-size: 0.95rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further mobile optimizations */
+    .wp-block-heading {
+        font-size: 1.5rem !important;
+    }
+    
+    .wp-block-group.has-border-color {
+        padding: 24px 16px !important;
+        margin: 20px 0 !important;
+    }
+    
+    .wp-block-group__inner-container {
+        padding: 24px !important;
+    }
+    
+    /* Contact info spacing */
+    .wp-block-group__inner-container p {
+        margin-bottom: 12px !important;
+        font-size: 0.95rem !important;
+    }
+}
