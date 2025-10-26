@@ -305,3 +305,42 @@ ul {
         font-size: 0.95rem !important;
     }
 }
+
+/* Service Area Content Alignment Fixes */
+.service-areas-content h3 {
+    text-align: center !important;
+    margin-bottom: 24px !important;
+}
+
+.service-areas-content .wp-block-list {
+    text-align: left !important;
+    padding-left: 0 !important;
+}
+
+.service-areas-content .wp-block-list li {
+    margin-bottom: 16px !important;
+    line-height: 1.6 !important;
+    text-align: left !important;
+}
+
+.service-areas-content .wp-block-list li strong {
+    color: var(--prestige-gold) !important;
+    display: inline-block !important;
+    margin-bottom: 4px !important;
+}
+
+/* Ensure service areas box content is properly aligned */
+.has-base-2-background-color .wp-block-group__inner-container {
+    text-align: center !important;
+}
+
+.has-base-2-background-color .wp-block-heading {
+    text-align: center !important;
+    margin-bottom: 20px !important;
+}
+
+.has-base-2-background-color .wp-block-list {
+    text-align: left !important;
+    display: inline-block !important;
+    width: 100% !important;
+}
