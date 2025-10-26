@@ -309,39 +309,43 @@ ul {
 /* Service Area Content Alignment Fixes */
 .has-base-2-background-color .wp-block-group__inner-container {
     text-align: center !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
 }
 
 .has-base-2-background-color .wp-block-heading {
     text-align: center !important;
     margin-bottom: 24px !important;
-    width: 100% !important;
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
 }
 
 .has-base-2-background-color .wp-block-list {
-    text-align: left !important;
-    width: 100% !important;
-    max-width: 400px !important;
+    text-align: center !important;
+    list-style: none !important;
+    padding: 0 !important;
     margin: 0 auto !important;
-    padding-left: 0 !important;
+    max-width: 100% !important;
 }
 
 .has-base-2-background-color .wp-block-list li {
-    margin-bottom: 16px !important;
+    margin-bottom: 20px !important;
     line-height: 1.6 !important;
-    padding-left: 0 !important;
-    list-style-position: inside !important;
+    text-align: center !important;
+    padding: 0 !important;
 }
 
 .has-base-2-background-color .wp-block-list li strong {
     color: var(--prestige-gold) !important;
     font-weight: 600 !important;
     display: block !important;
-    margin-bottom: 4px !important;
+    margin-bottom: 8px !important;
+    font-size: 1.1rem !important;
 }
 
-.has-base-2-background-color .wp-block-list li::marker {
-    color: var(--prestige-gold) !important;
+.has-base-2-background-color .wp-block-list li strong::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: var(--prestige-gold);
+    margin: 8px auto 12px auto;
 }
